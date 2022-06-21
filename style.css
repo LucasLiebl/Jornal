@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@580&display=swap');
+
+:root{
+    --cor_a:#2B2D42;
+    --cor_b:#8D99AE;
+    --cor_c:#EDF2F4;
+    
+
+}
+
+body{
+    background-color: var(--cor_c);
+    margin: 0px;
+}
+nav{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color: var(--cor_a);
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+}
+.logo{
+    
+    text-align: center;
+}
+header{
+    height: 30px;
+    background-color: var(--cor_b);
+    color: var(--cor_a);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Glory'
+}
+main{
+
+}
