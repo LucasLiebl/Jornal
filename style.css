@@ -6,7 +6,7 @@
     --cor_a:#2B2D42;
     --cor_b:#8D99AE;
     --cor_c:#EDF2F4;
-    
+    --cor_d:#DCDCDC;
 
 }    
 
@@ -19,7 +19,7 @@ nav{
     grid-template-columns:1fr 1fr 1fr;
     background-color: var(--cor_a);
     margin: 0px;
-    position: sticky;
+    
     top: 0px;
     height: 100px;
 }
@@ -28,6 +28,8 @@ nav{
     text-align: center;
 }
 header{
+    position: sticky;
+    top: 0px;
     height: 30px;
     background-color: var(--cor_b);
     color: var(--cor_a);
@@ -37,35 +39,82 @@ header{
     font-size: 150%;
     font-family: 'Glory';
     box-shadow: var(--cor_a) 3px 3px 3px ;
+    
 }
 main{
 display: grid;
-grid-template-columns: 200px 1fr 1fr 1fr 200px;
+grid-template-columns: 320px 1fr 1fr 1fr 320px;
 }
 .box{
-    height: 400px;
+    height: 100%;
     box-shadow: grey 0px 5px 5px;
-    text-align:;
+    border-radius: 3%;
+    margin-right: 10px; 
+    padding: 2px;
+    margin-top: 30px;
+    
 }
-@media (max-width: 1300px){
+.box>img{
+    width: 100%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+.box>.text{
+    padding-top: 0px;
+    font-family: 'Glory';
+}
+.text>h1{
+    margin: 0px;
+}
+.text>p{
+    margin-bottom: 0px;
+}
+.box:hover{
+    animation: box 0.2s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes box {
+    0% {
+        transform: scale(1);
+        background-color: var(--cor_c);
+    }
+    100%{
+        transform: scale(1.03);
+        background-color: var(--cor_d);
+    }
+}
+
+
+@media (max-width: 1400px){
     header{
 
         grid-template-columns:1fr 1fr 1fr 1fr;
    }
-   .lateral{
-       display: none;
-   }
+   
    main{
-       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-columns: 100px 1fr 1fr 1fr 100px;
+   }
+   .lateralH{
+    display: none;
    }
 }
-@media(max-width: 800px){
+@media(max-width: 1000px){
     main{
         grid-template-columns: 1fr 1fr;
     }
+    .lateral{
+        display: none;
+    }
 }
-@media (max-width: 450px){
+@media (max-width: 500px){
 main{
     grid-template-columns: 1fr;
 }
+.box{
+    margin: 10px;
+}
+
 }
