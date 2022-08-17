@@ -13,8 +13,9 @@
 body{
     background-color: var(--cor_c);
     margin: 0px;
+    
 }
-nav{
+header{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     background-color: var(--cor_a);
@@ -27,27 +28,28 @@ nav{
     
     text-align: center;
 }
-header{
+nav{
     position: sticky;
     top: 0px;
     height: 30px;
     background-color: var(--cor_b);
     color: var(--cor_a);
     display: grid;
-    grid-template-columns:200px 1fr 1fr 1fr 1fr 200px;
+    grid-template-columns:1fr 450px 450px 450px 1fr;
     text-align: center;
     font-size: 150%;
     font-family: 'Glory';
     box-shadow: var(--cor_a) 3px 3px 3px ;
+    text-decoration: none;
     
 }
-.configuracoes:hover{
-    
-}
+
 .noticiaPrincipal{
+    margin-top: 8px;
     display: grid;
     grid-template-columns: 1fr 1350px 1fr;
-
+    text-decoration: none;
+    
 }
 .Principal{
     box-shadow: grey 0px 5px 5px;
@@ -55,6 +57,8 @@ header{
     margin-right: 10px; 
     padding-bottom: 25px;
     margin: 8px;
+    text-decoration: none;
+    
 }
 .text1{
     padding-top: 0px;
@@ -62,6 +66,8 @@ header{
     text-align: justify;
     padding-right: 5px;
     padding-left: 5px;
+    text-decoration: none;
+    color: black;
 }
 .Principal>img{
     width: 100%;
@@ -72,6 +78,7 @@ header{
 .Principal:hover{
     animation: box 0.2s;
     animation-fill-mode: forwards;
+    text-decoration: none;
     
 }
 .noticias{
@@ -99,6 +106,7 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
     text-align: justify;
     padding-right: 5px;
     padding-left: 5px;
+    color: black;
 }
 .text>h1{
     margin: 0px;
@@ -111,7 +119,25 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
     animation-fill-mode: forwards;
     
 }
-
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 8px;
+    margin-bottom: 0px;
+}
+.by{
+    font-family: 'Glory';
+    text-align: center;
+    font-size: 120%;
+    opacity: 60%;
+    margin-bottom: 0px;
+}
+.barra{
+    background-color: var(--cor_a);
+    height: 60px;
+    padding: 0px;
+    margin-top: 0px;
+}
 
 @keyframes box {
     0% {
@@ -126,9 +152,9 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
 
 
 @media (max-width: 1400px){
-    header{
+    nav{
 
-        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
    }
    .noticiaPrincipal{
     grid-template-columns: 1fr;
@@ -139,6 +165,7 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
    .lateralH{
     display: none;
    }
+
 }
 @media(max-width: 1000px){
     .noticias{
