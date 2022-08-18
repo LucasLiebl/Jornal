@@ -29,19 +29,12 @@ header{
     text-align: center;
 }
 nav{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     position: sticky;
     top: 0px;
-    height: 30px;
-    background-color: var(--cor_b);
-    color: var(--cor_a);
-    display: grid;
-    grid-template-columns:1fr 450px 450px 450px 1fr;
-    text-align: center;
-    font-size: 150%;
-    font-family: 'Glory';
-    box-shadow: var(--cor_a) 3px 3px 3px ;
-    text-decoration: none;
-    
 }
 
 .noticiaPrincipal{
@@ -129,8 +122,10 @@ footer{
     font-family: 'Glory';
     text-align: center;
     font-size: 120%;
-    opacity: 60%;
+    opacity: 50%;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 30px
 }
 .barra{
     background-color: var(--cor_a);
