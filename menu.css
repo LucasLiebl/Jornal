@@ -17,6 +17,7 @@
     border: 0px;
     margin: 0px;
     width: 100%;
+    
 }
 
 .dropdown-menu li{
@@ -56,20 +57,14 @@
 
 .dropdown-submenu a{
     background-color: #00000080;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 10%;
     font-size: .8rem;
     border-left: 0px solid transparent;
     color: var(--cor_c);
 }
 .dropdown-submenu li:hover > a{
     border-left: 8px solid black;
-}
-@media(max-height: 600px){
-    .dropdown-submenu a{
-        width: 200%;
-        height: 300%;
-    }
 }

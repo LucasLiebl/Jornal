@@ -145,7 +145,20 @@ footer{
     }
 }
 
+.pagNoticias{
+display: grid;
+grid-template-columns: 1fr 1350px 1fr;
+padding-top: 8px;
+}
+.text2{
+    font-family: 'Glory';
+    text-align: center;
+}
+h1>.text2{
+    font-size: 55px;
+padding: 0px;
 
+}
 @media (max-width: 1400px){
     nav{
 
@@ -160,7 +173,9 @@ footer{
    .lateralH{
     display: none;
    }
-
+.pagNoticias{
+    grid-template-columns: 1fr;
+}
 }
 @media(max-width: 1000px){
     .noticias{
