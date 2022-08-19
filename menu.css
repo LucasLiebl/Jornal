@@ -66,5 +66,5 @@
     color: var(--cor_c);
 }
 .dropdown-submenu li:hover > a{
-    border-left: 8px solid black;
+    border-left: 8px solid var(--cor_b);
 }

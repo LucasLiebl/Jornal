@@ -152,12 +152,26 @@ padding-top: 8px;
 }
 .text2{
     font-family: 'Glory';
-    text-align: center;
+    text-align: left;
+    
 }
-h1>.text2{
+.text2>h1{
     font-size: 55px;
-padding: 0px;
-
+padding-left: 8px;
+}
+.text2>p{
+    font-size: 25px;
+    opacity: 80%;
+    padding-left: 8px;
+}
+.fotoMeiaTela{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 8px;
+    font-size: 25px;
+}
+.fotoMeiaTela>p{
+    opacity: 80%;
 }
 @media (max-width: 1400px){
     nav{
@@ -176,13 +190,26 @@ padding: 0px;
 .pagNoticias{
     grid-template-columns: 1fr;
 }
+.Principal{
+    margin: 15px;
+    margin-top: 8px;
+}
+.box{
+    margin: 15px;
+}
 }
 @media(max-width: 1000px){
     .noticias{
         grid-template-columns: 1fr 1fr;
     }
-   
-    
+    .Principal{
+        margin: 15px;
+        margin-top: 8px;
+    }
+    .box{
+        margin: 15px;
+    }    
+  
 }
 @media (max-width: 600px){
     .noticiaPrincipal{
@@ -192,7 +219,13 @@ padding: 0px;
     grid-template-columns: 1fr;
 }
 .box{
-    margin: 10px;
+    margin: 15px;
 }
-
+.Principal{
+    margin: 15px;
+    margin-top: 8px;
+}
+.fotoMeiaTela{
+    grid-template-columns: 1fr;
+}
 }
