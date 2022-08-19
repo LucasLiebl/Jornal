@@ -7,11 +7,14 @@
     --cor_b:#8D99AE;
     --cor_c:#EDF2F4;
     --cor_d:#DCDCDC;
-    --img01:url("fotoPrincipal.jpg")
-    --img02:url("Dreikkkkkk.jpg")
+    
 }    
-.principalImg{
-    content: var(--img01);
+:root{
+    --img03:url("buracuNegru.jpg")
+    
+}
+:root{
+    --img01:url("Dreikkkkkk.jpg")
 }
 body{
     background-color: var(--cor_c);
@@ -111,15 +114,9 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
     margin-bottom: 0px;
 }
 .box:hover{
-    animation: b ox 0.2s;
-
-
-
-
-
-
-
-    animation-fill-mode: forwards;
+    animation:  0.2s;
+    animation-fill-mode: forwards;  
+    animation-name : box; 
     
 }
 footer{
@@ -260,5 +257,12 @@ padding-left: 8px;
     background-color: var(--cor_b);
 }
 .darkMode .principalImg {
-content: var(--);
+content: var(--img03);
+
+}
+img{
+    transition: .12s;
+}
+.darkMode .imgkkk{
+    content: var(--img01);
 }
