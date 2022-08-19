@@ -42,7 +42,7 @@
 
 .dropdown-menu li:hover > a{
     background-color: var(--cor_a);
-    color: var();
+    color: white;
 }
 
 .dropdown-menu li:hover > .dropdown-submenu {
@@ -67,4 +67,7 @@
 }
 .dropdown-submenu li:hover > a{
     border-left: 8px solid var(--cor_b);
+}
+.main.active{
+    background-color: black;
 }

@@ -8,14 +8,14 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="script.js">
+  <script src="theme.js"></script>
 </head>
 
-<body>
+<body class="body">
   <header>
     <div></div>
     <div class="logo">
-      <img src="logo.png" alt="Logo do Jornal" height="100px" />
+      <a href="index.html"><img src="logo.png" alt="Logo do Jornal" height="100px" /></a>
     </div>
     <div></div>
   </header>
@@ -26,19 +26,16 @@
       <li>
         <a href="#">CONFIGURAÇÕES &#9660;</a>
         <ul class="dropdown-submenu">
-          <li><a href="#">REDES DE COMPUTADORES</a></li>
-          <li><a href="#">ADMINISTRAÇÃO</a></li>
-          <li><a href="#">ELETROELETRÔNICA</a></li>
+          <li onclick="darkMode()"><a href="#">Dark Mode</a></li>
         </ul>
       </li>
-      <li><a href="#">HOME</a></li>
+      <li><a href="index.html">HOME</a></li>
       <li>
-        <a href="#">NOTÍCIAS &#9660;</a>
+        <a href="">NOTÍCIAS &#9660;</a>
         <ul class="dropdown-submenu">
-          <li><a href="#">FRONT-END</a></li>
-          <li><a href="#">BACK-END</a></li>
-          <li><a href="#">DATA BASE</a></li>
-          <li><a href="#">DESIGN</a></li>
+          <li><a href="noticia01.html">NOTÍCIA 01</a></li>
+          <li><a href="noticia02.html">NOTÍCIA 02</a></li>
+          <li><a href="noticia03.html">NOTÍCIA 03</a></li>
         </ul>
       </li>
 
@@ -203,7 +200,6 @@
       <div class="lateralH"></div>
     </div>
   </main>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur minima, ullam odio neque cumque, molestiae error eligendi eius, commodi ab reiciendis omnis repellendus corporis placeat repudiandae! Totam autem asperiores minus.</p>
   <footer>
     <div class="by"> By Lucas and João</div>
     <div class="barra"></div>

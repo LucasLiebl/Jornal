@@ -9,7 +9,6 @@
     --cor_d:#DCDCDC;
 
 }    
-
 body{
     background-color: var(--cor_c);
     margin: 0px;
@@ -228,4 +227,24 @@ padding-left: 8px;
 .fotoMeiaTela{
     grid-template-columns: 1fr;
 }
+}
+.body{
+    background-color: white;
+    transition: .6s;
+}
+.darkMode{
+    background-color: var(--cor_a);
+}
+
+.darkMode div{
+    color: white;
+}
+.darkMode div:hover{
+    color: black;
+}
+.darkMode header{
+    background-color: var(--cor_b);
+}
+.darkMode .barra{
+    background-color: var(--cor_b);
 }
