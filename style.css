@@ -7,8 +7,12 @@
     --cor_b:#8D99AE;
     --cor_c:#EDF2F4;
     --cor_d:#DCDCDC;
-
+    --img01:url("fotoPrincipal.jpg")
+    --img02:url("Dreikkkkkk.jpg")
 }    
+.principalImg{
+    content: var(--img01);
+}
 body{
     background-color: var(--cor_c);
     margin: 0px;
@@ -107,7 +111,14 @@ grid-template-columns: 1fr 450px 450px 450px 1fr;
     margin-bottom: 0px;
 }
 .box:hover{
-    animation: box 0.2s;
+    animation: b ox 0.2s;
+
+
+
+
+
+
+
     animation-fill-mode: forwards;
     
 }
@@ -247,4 +258,7 @@ padding-left: 8px;
 }
 .darkMode .barra{
     background-color: var(--cor_b);
+}
+.darkMode .principalImg {
+content: var(--);
 }
